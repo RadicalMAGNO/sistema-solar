@@ -1,0 +1,233 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+header{
+    background-image: url("https://www.pngall.com/wp-content/uploads/10/Solar-System-PNG-Photos.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment:unset;
+    text-align: center;
+    /* alineacion de titulo */
+    color: rgb(240, 213, 213);
+    /* color de titulo */
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 20px 10px 20px;
+
+    margin: 0 10px 0 10px;
+}
+header img{
+    height: 100px;
+    display: flex;
+    float: left;
+}
+
+body {
+    margin: 0 20px 0 20px;
+    height: 100%;
+    /* tamaño para la imagen */
+    /* background-color: green; */
+    /* color fondo */
+    background-image: url("https://i.pinimg.com/originals/cf/c2/15/cfc215287cf3958d8f77bc5cd3e78114.jpg");
+    /* imagen de fondo */
+    background-repeat:auto;
+    /* repeat-x:  atributos para la imagen para repetir o no imagen*/
+    background-size: 100%;
+    /* TAMAÑO DE IMAGEN */
+    background-position-x: center ;
+    /* POSICION DE IMAGEN X o Y en plano cartesiano */
+    background-position-y: center ;
+    background-attachment: fixed;
+    /* FIXED: DEJA IMAGEN ESTATICA - SCROLL: IMAGEN SE MUEVE CON EL TEXTO */
+}
+/* plano cartesiano x se refiere a un plano horizontal */
+/* plano cartesiano Y se refiere a un plano vertical */
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: lavender;
+
+}
+.ul {
+    
+    list-style-type: none;
+    text-decoration: none;
+    /* quito viñetas */
+    margin: 0;
+    /* margen interno  */
+    padding: 0;
+    /* margen externo  */
+    width: 100px;
+    height: 40px;
+    background-color:rgb(15, 163, 84) ;
+    /* sirve para poner bordes  */
+    border: 1px solid rgb(52, 73, 234);
+
+}
+nav{
+    margin: 0 10px 0 10px;
+    padding: 0 20px 10px 20px;
+    border: 5px solid white;
+
+}
+.galaxia{
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.planeta{
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    animation-name: girarb;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: block;
+}
+@keyframes girarb{
+
+    from{
+        transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+li{
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    list-style: none;
+
+}
+a {
+    display: inline-block
+    
+    
+}
+/*
+li:last-child{
+    border-bottom:none ;
+    text-decoration: none;
+    list-style: none;
+    
+} */
+
+
+li a{
+    /* border-bottom: 5px solid rgb(209, 215, 214); */
+    text-shadow: 2px 1px 1px rgb(246, 239, 106);
+    color: rgb(194, 94, 209);
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0px 0 0px 0px;
+    margin: 22px;
+    font-size: 30px;
+}
+
+/* hover cambia el color al pasar el mouse  */
+li a:hover{
+    background-color: blueviolet;
+    color: rgb(239, 246, 233);
+}
+/* .planeta:hover{
+    transform:scaleX(-1); 
+    transform: rotate(10deg);
+    animation-delay: -0.6s;
+
+}  */
+/* sirve para dejar marecado el color  */
+.active{
+    background-color: rgb(209, 116, 116);
+    color: rgb(205, 205, 5);
+}
+h2{
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(174, 174, 3);
+}
+
+h3{
+    text-align: center;
+    color:rgb(104, 10, 220);
+    /* color de titulos */
+    text-decoration: underline;
+    /* underline subrayado  */
+    /* line-through es tachado */
+    /* overline linea sobre la palabra */
+    text-transform:initial;
+    /* minuscula ; lowercase / uppercase: mayuscula / primera letra mayuscula; initial*/
+    /* permite cambiar a el formato de minus o mayus */
+    letter-spacing: 8px;
+    /* permite separar letras entre los caracteres   */
+    font-size: 35px;
+    /* tamaño de letra  */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /* cambiar tipo de letra  */
+    font-style: italic; 
+    /* para dar forma al parrafo cursiva: italic */
+    font-weight: bold;
+    /* sirve para dar formato negrita sin poner px solo valor tambien se puede usar el valor: bold para negrita clasica */
+    /* sombra horizontal - vertical - desenfoque - color  */
+    text-shadow: 2px 1px 1px rgb(214, 204, 24);
+    /* se colocan tres cosas: primernumero1px la sombra parte horizontal(se mueva mas a la derecha cambio a iz con -1), 1px segundd sobra vertical(da la opcion de mover hacia arriba con -1), 1px tercera es el desenfoqueenfoque.(la sombra se nota) y al final el color de sombra */
+
+
+    /* selector tipo clase  */
+}
+/* cuando se usa id se tiene que comenzar con un # */
+/* #merc{
+    color: blue;
+}
+#ven{
+    color: deeppink;
+    font-size: 30px;
+} */
+
+p{
+
+    min-height: auto;
+    
+
+    color: rgb(239, 231, 231);
+    /* color del parrafo */
+    font-size: 20px;
+    /* (en css se ingresa esta propiedad para html solo size)tamaño de letra del parrafo  */
+    text-align: justify;
+    /* alineacion del texto en parrafo */
+    word-spacing: 10px;
+    /* espacio de linea entra palabras */
+    
+    line-height: 30px;
+    /* interlineado entre linea y linea*/
+}
+footer{
+    background-color:rgb(43, 68, 18) ;
+    color: rgb(178, 223, 52);
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.end p{
+    color: rgb(240, 235, 245);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 5px;
+}
