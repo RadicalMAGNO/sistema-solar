@@ -1,0 +1,36 @@
+
+table,th,td{
+    /* border-style: ;
+    border-width: ;
+    border-color: ;
+    estas son los estilos uno por uno de border */
+    border: 1px solid tomato
+
+}
+table{
+    width: 100%;
+    text-align: center;   /*alineacion vertical*/
+    border-collapse:collapse; /*borde simple*/
+}
+td img{ 
+    width: 30%;    /* ancho */
+    
+}
+th{ /*encabezado*/
+    height: 50px; /*altura*/
+    background-color: blueviolet;
+}
+td{ /*fila*/
+    height: 30px;
+    /*alineacion horizontal*/vertical-align:bottom ; /* bottom:abajo*/ /*top: superior; middle: centro*/
+    padding: 15px;
+}
+tr:hover{ /*ACCION DE CAMBIO COLOR*/
+    background-color: aqua;
+}
+
+/* color de cebra */
+tr:nth-child(even){ /* toma una linea con un color */ /*even: incluye un color adicional*/ 
+    background-color:#f2f2f2;
+
+} 
